@@ -1,0 +1,494 @@
+--------- beginning of main
+03-04 11:42:19.968  1515  6211 I RealtimeCacheCleanup: Beginning Realtime garbage collection.
+03-04 11:42:19.969  1515  6211 I RealtimeCacheCleanup: Finished Realtime garbage collection.
+--------- beginning of system
+03-04 11:42:21.667  1033  2766 E ActivityThread: Failed to find provider info for com.google.android.apps.wellbeing.api
+03-04 11:42:22.424   594   639 W BroadcastQueue: Background execution not allowed: receiving Intent { act=com.google.android.music.START_DOWNLOAD_SCHEDULING flg=0x10 } to com.google.android.music/.autocache.AutoCacheSchedulingService$EnablingReceiver
+03-04 11:42:22.503  1620  4328 I CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by pid 6217=1)
+03-04 11:42:22.511   594  2669 D CompatibilityChangeReporter: Compat change id reported: 149924527; UID 10121; state: ENABLED
+03-04 11:42:22.512   594  2669 D CompatibilityChangeReporter: Compat change id reported: 132649864; UID 10121; state: DISABLED
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: OR
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: AND
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: IS
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: NOT
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: NULL
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: AND
+03-04 11:42:22.516  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: OR
+03-04 11:42:22.517  1620  4328 D SQLiteQueryBuilder: SELECT _id, album, artist, composer, date_added, duration, mime_type, _size, title, track, year, album_id, album_artist FROM audio WHERE ((is_pending=0 OR (is_pending=1 AND lower(_data) NOT REGEXP '.*/\.pending-(\d+)-([^/]+)$' AND owner_package_name IN ( 'com.google.android.music' ))) AND (is_trashed=0) AND (volume_name IN ( 'external_primary' , '0ef1-1507' ))) AND ((((is_music=1 OR is_podcast=1) AND title IS NOT NULL)  AND (date_added >=?  OR date_modified >=?  ))) ORDER BY date_added with args [1614829258, 1614829258]
+03-04 11:42:22.519  1620  4328 I CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by pid 6217=1)
+03-04 11:42:22.520  1620  4328 D SQLiteCursor: received count(*) from native_fill_window: 0
+03-04 11:42:22.526  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: *
+03-04 11:42:22.527  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: *
+03-04 11:42:22.527  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: OR
+03-04 11:42:22.528  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: AND
+03-04 11:42:22.528  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: IS
+03-04 11:42:22.528  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: NOT
+03-04 11:42:22.528  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: NULL
+03-04 11:42:22.529  1620  4328 W SQLiteQueryBuilder: Allowing abusive custom column: *
+03-04 11:42:22.529  1620  4328 D SQLiteQueryBuilder: SELECT count(*) FROM audio WHERE ((is_pending=0 OR (is_pending=1 AND lower(_data) NOT REGEXP '.*/\.pending-(\d+)-([^/]+)$' AND owner_package_name IN ( 'com.google.android.music' ))) AND (is_trashed=0) AND (volume_name IN ( 'external_primary' , '0ef1-1507' ))) AND (((is_music=1 OR is_podcast=1) AND title IS NOT NULL)) with args null
+03-04 11:42:22.531  1620  4328 I CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by pid 6217=2)
+03-04 11:42:22.532  1620  4328 D SQLiteCursor: received count(*) from native_fill_window: 1
+03-04 11:42:22.538  1620  4328 D SQLiteQueryBuilder: SELECT _id, name, date_added, date_modified FROM audio_playlists WHERE ((is_pending=0 OR (is_pending=1 AND lower(_data) NOT REGEXP '.*/\.pending-(\d+)-([^/]+)$' AND owner_package_name IN ( 'com.google.android.music' ))) AND (is_trashed=0) AND (volume_name IN ( 'external_primary' , '0ef1-1507' ))) with args null
+03-04 11:42:22.540  1620  4328 I CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by pid 6217=2)
+03-04 11:42:22.540  1620  4328 D SQLiteCursor: received count(*) from native_fill_window: 0
+03-04 11:42:22.549  6217  6258 I MediaStoreImporter: Update: incremental Success: true Added music: 0 Updated music: 0 Deleted music: 0 Created playlists: 0 Updated playlists: 0 Deleted playlists: 0 Inserted playlist items: 0 Deleted playlist items: 0 Removed orphaned playlist items: 0 Total item count: 0
+03-04 11:42:22.558  6217  6217 D MusicLifecycle: com.google.android.music.download.EncapsulatedBroadcastReceiver$1 generated event: Broadcast received with context com.google.android.music.ui.PhoneMusicApplication@24d55ad and intent Intent { act=com.google.android.music.IMPORT_COMPLETE flg=0x10 }
+03-04 11:42:22.561  1620  2210 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:22.561  1620  2210 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.562  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.562  1620  6280 E FuseDaemon: Failed to invalidate dentry com.google.android.music
+03-04 11:42:22.562  1620  2210 V FuseDaemon: do_forget : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480/3937376240/3937372592 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.562  1620  2210 D FuseDaemon: Node: 3937372592 deleted.
+03-04 11:42:22.562  1620  2210 V FuseDaemon: do_forget : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.562  1620  1784 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.562  1620  6281 E FuseDaemon: Failed to invalidate dentry files
+03-04 11:42:22.562  1620  1783 V FuseDaemon: pf_access : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.563  1620  2210 V FuseDaemon: do_forget : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.563  1620  2210 D FuseDaemon: Node: 3937376240 deleted.
+03-04 11:42:22.563  1620  2210 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:22.563  1620  1784 V FuseDaemon: do_forget : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.563  1620  1784 D FuseDaemon: Node: 3937238480 deleted.
+03-04 11:42:22.563  1620  2210 D FuseDaemon: Node: 3937376240 created.
+03-04 11:42:22.564  1620  2210 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.564  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.564  1620  1784 D FuseDaemon: Node: 3937238480 created.
+03-04 11:42:22.564  1620  1784 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.565  1620  1783 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.565  1620  1783 D FuseDaemon: Node: 3937387664 created.
+03-04 11:42:22.565  1620  1783 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.566  1620  2210 V FuseDaemon: pf_access : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.567  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:22.568  1620  1784 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.568  1620  1783 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240 real_path: /storage/0EF1-1507/Android/data/com.google.android.music] 
+03-04 11:42:22.568  1620  6282 E FuseDaemon: Failed to invalidate dentry com.google.android.music
+03-04 11:42:22.569  1620  1783 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.569  1620  2210 V FuseDaemon: do_forget : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.570  1620  2210 D FuseDaemon: Node: 3937387664 deleted.
+03-04 11:42:22.570  1620  2210 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files] 
+03-04 11:42:22.570  1620  2210 D FuseDaemon: Node: 3937387664 created.
+03-04 11:42:22.570  1620  2210 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.571  1620  6283 E FuseDaemon: Failed to invalidate dentry files
+03-04 11:42:22.571  1620  1783 V FuseDaemon: pf_open : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] read
+03-04 11:42:22.572  1620  1784 V FuseDaemon: pf_getattr : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.572  1620  2210 V FuseDaemon: pf_getattr : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.574  1620  1784 V FuseDaemon: pf_getattr : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.574  1620  2210 V FuseDaemon: pf_flush : nullptr = [?] noop
+03-04 11:42:22.575  1620  1783 V FuseDaemon: pf_release : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937376240/3937238480/3937387664 real_path: /storage/0EF1-1507/Android/data/com.google.android.music/files/._playmusicid] 
+03-04 11:42:22.919   594  2669 I ActivityManager: Killing 5895:com.android.keychain/1000 (adj 975): empty #17
+03-04 11:42:22.937   359   359 I Zygote  : Process 5895 exited due to signal 9 (Killed)
+03-04 11:42:22.964   594   641 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 5895 in 43ms
+03-04 11:42:24.329  2514  3429 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 OmtpVvmCarrierCfgHlpr OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1]
+03-04 11:42:24.330  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 RetryPolicy discarding deferred status: configuration_state=4
+03-04 11:42:24.332  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskExecutor no more tasks, stopping service if no task are added in 5000 millis
+03-04 11:42:24.338  2514  2514 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:49 Impression: VVM_AUTO_RETRY_ACTIVATION
+03-04 11:42:24.338  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskReceiver task received
+03-04 11:42:24.339  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskReceiver TaskExecutor already running
+03-04 11:42:24.340  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 Task.createTask create task:com.android.voicemail.impl.ActivationTask
+03-04 11:42:24.340  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 RetryPolicy retry #2 for com.android.voicemail.impl.ActivationTask@dc7acd queued, executing in 5000
+03-04 11:42:24.350  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskExecutor com.android.voicemail.impl.ActivationTask@dc7acd added
+03-04 11:42:24.350  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskExecutor minimal wait time:4991
+03-04 11:42:24.351  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskExecutor sleep for 4991 millis
+03-04 11:42:27.128  1515  6288 I Vision  : Requesting optional module download of ocr.
+03-04 11:42:27.129  1515  6288 I Vision  : Checking for download completion for 278854 -- ocr
+--------- beginning of kernel
+03-04 11:42:28.709     0     0 D logd    : logdr: UID=2000 GID=2000 PID=6289 b tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+03-04 11:42:29.354  2514  3429 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmTaskExecutor executing task com.android.voicemail.impl.ActivationTask@dc7acd
+03-04 11:42:29.355  2514  3429 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 PreOMigrationHandler ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0} already migrated
+03-04 11:42:29.359  2514  2514 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:49 Impression: VVM_ACTIVATION_STARTED
+03-04 11:42:29.386  1640  4269 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+03-04 11:42:29.390  2514  3429 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmActivationTask VVM content provider configured - vvm_type_cvvm PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1]
+03-04 11:42:29.392  2514  3429 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 OmtpVvmCarrierCfgHlpr OmtpEvent:CONFIG_ACTIVATING PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1]
+03-04 11:42:29.401  1640  4269 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+03-04 11:42:29.407  1146  1501 I LocationAccessPolicy: Allowing com.google.android.dialer fine because it doesn't target API 29 yet. Please fix this app. Called from getServiceStateForSubscriber
+03-04 11:42:29.408  1146  1501 I LocationAccessPolicy: Allowing com.google.android.dialer coarse because it doesn't target API 29 yet. Please fix this app. Called from getServiceStateForSubscriber
+03-04 11:42:29.423  1146  1501 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+03-04 11:42:29.426  1146  1501 D SmsNumberUtils: destAddr is not formatted.
+03-04 11:42:29.427  1146  1501 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+03-04 11:42:29.439  2514  2514 I DialerVvmLog: com.android.voicemail.impl.VvmLog.i:65 VvmStatusSmsFetcher Request SMS successfully sent
+03-04 11:42:30.470   594  2669 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.rnfbdemo/.MainActivity} from uid 2000
+03-04 11:42:30.471   594   633 I EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+03-04 11:42:30.473   450   685 D iorapd  : EventManager: Looking up compiled trace done in 0ms.
+03-04 11:42:30.473   450   685 D iorapd  : Cannot find compiled trace in sqlite for package_name: com.rnfbdemo activity_name: com.rnfbdemo.MainActivity
+03-04 11:42:30.474   450   685 D iorapd  : Prebuilt compiled trace doesn't exists. file_path: /product/iorap-trace/com.rnfbdemo.compiled_trace.pb
+03-04 11:42:30.476   450  6299 D iorapd  : Create Perfetto handle 6
+03-04 11:42:30.477   441   441 I perfetto: ing_service_impl.cc:758 Configured tracing session 6, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+03-04 11:42:30.479   438   438 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=6)
+03-04 11:42:30.490   594   633 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10153; state: DISABLED
+03-04 11:42:30.491   594   633 I EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+03-04 11:42:30.491   594   640 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10153; state: DISABLED
+03-04 11:42:30.514   438   438 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+03-04 11:42:30.484     0     0 W perfetto: enabled ftrace
+03-04 11:42:30.519   359   359 D Zygote  : Forked child process 6302
+03-04 11:42:30.530   594   640 I ActivityManager: Start proc 6302:com.rnfbdemo/u0a153 for pre-top-activity {com.rnfbdemo/com.rnfbdemo.MainActivity}
+03-04 11:42:30.534   379  1373 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:30.534  6302  6302 W com.rnfbdemo: Unexpected CPU variant for X86 using defaults: x86
+03-04 11:42:30.534   379  1373 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f4e26000 size 0xe11000
+03-04 11:42:30.560   435   478 I adbd    : jdwp connection from 6302
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.580   594  2047 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.582   594  2047 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:30.595  6302  6302 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-04 11:42:30.608  6302  6302 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-04 11:42:30.609  6302  6302 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-04 11:42:30.615  6302  6302 W ComponentDiscovery: Class com.google.firebase.dynamicloading.DynamicLoadingRegistrar is not an found.
+03-04 11:42:30.617  6302  6302 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+03-04 11:42:30.617  6302  6302 I FirebaseInitProvider: FirebaseApp initialization successful
+03-04 11:42:30.619  6302  6302 D SoLoader: init start
+03-04 11:42:30.619  6302  6302 D SoLoader: adding system library source: /vendor/lib
+03-04 11:42:30.619  6302  6302 D SoLoader: adding system library source: /system/lib
+03-04 11:42:30.619  6302  6302 D SoLoader: adding application source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86 flags = 0]
+03-04 11:42:30.620  6302  6302 D SoLoader: adding backup source from : com.facebook.soloader.ApkSoSource[root = /data/user/0/com.rnfbdemo/lib-main flags = 1]
+03-04 11:42:30.620  6302  6302 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /system/lib flags = 2]
+03-04 11:42:30.620  6302  6302 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /vendor/lib flags = 2]
+03-04 11:42:30.620  6302  6302 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86 flags = 0]
+03-04 11:42:30.620  6302  6302 D SoLoader: Preparing SO source: com.facebook.soloader.ApkSoSource[root = /data/user/0/com.rnfbdemo/lib-main flags = 1]
+03-04 11:42:30.621  6302  6302 V fb-UnpackingSoSource: locked dso store /data/user/0/com.rnfbdemo/lib-main
+03-04 11:42:30.623  6302  6302 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+03-04 11:42:30.623  6302  6302 V fb-UnpackingSoSource: so store dirty: regenerating
+03-04 11:42:30.651  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libc++_shared.so: deferring to libdir
+03-04 11:42:30.651  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libfb.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libfbjni.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libfolly_futures.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libfolly_json.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libglog.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libglog_init.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libhermes-executor-debug.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libhermes-executor-release.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libhermes-inspector.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libimagepipeline.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libjsc.so: deferring to libdir
+03-04 11:42:30.652  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libjscexecutor.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libjsijniprofiler.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libjsinspector.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libnative-filters.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libnative-imagetranscoder.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libreactnativeblob.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libreactnativejni.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 D ApkSoSource: not allowing consideration of lib/x86/libyoga.so: deferring to libdir
+03-04 11:42:30.653  6302  6302 V fb-UnpackingSoSource: regenerating DSO store com.facebook.soloader.ApkSoSource
+03-04 11:42:30.654  6302  6302 V fb-UnpackingSoSource: Finished regenerating DSO store com.facebook.soloader.ApkSoSource
+03-04 11:42:30.656  6302  6302 V fb-UnpackingSoSource: starting syncer worker
+03-04 11:42:30.668  6302  6302 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.rnfbdemo/lib-main (from syncer thread)
+03-04 11:42:30.668  6302  6302 V fb-UnpackingSoSource: not releasing dso store lock for /data/user/0/com.rnfbdemo/lib-main (syncer thread started)
+03-04 11:42:30.668  6302  6302 D SoLoader: init finish: 4 SO sources prepared
+03-04 11:42:30.668  6302  6302 D SoLoader: init exiting
+03-04 11:42:30.670  6302  6302 D SoLoader: init exiting
+03-04 11:42:30.670  6302  6302 D SoLoader: About to load: libjscexecutor.so
+03-04 11:42:30.670  6302  6302 D SoLoader: libjscexecutor.so not found on /data/user/0/com.rnfbdemo/lib-main
+03-04 11:42:30.670  6302  6302 D SoLoader: libjscexecutor.so found on /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86
+03-04 11:42:30.670  6302  6302 D SoLoader: Not resolving dependencies for libjscexecutor.so
+03-04 11:42:30.678  6302  6302 D JavaScriptCore.Version: 245459.0.0
+03-04 11:42:30.679  6302  6302 D SoLoader: Loaded: libjscexecutor.so
+03-04 11:42:30.679  6302  6302 D SoLoader: init exiting
+03-04 11:42:30.691  6302  6326 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+03-04 11:42:30.693  6302  6326 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+03-04 11:42:30.698  6302  6326 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+03-04 11:42:30.721  6302  6327 D SoLoader: About to load: libreactnativejni.so
+03-04 11:42:30.722  6302  6327 D SoLoader: libreactnativejni.so not found on /data/user/0/com.rnfbdemo/lib-main
+03-04 11:42:30.722  6302  6327 D SoLoader: libreactnativejni.so found on /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86
+03-04 11:42:30.723  6302  6327 D SoLoader: Not resolving dependencies for libreactnativejni.so
+03-04 11:42:30.736  6302  6327 D SoLoader: Loaded: libreactnativejni.so
+03-04 11:42:30.736  6302  6327 D SoLoader: About to load: libfbjni.so
+03-04 11:42:30.736  6302  6327 D SoLoader: libfbjni.so not found on /data/user/0/com.rnfbdemo/lib-main
+03-04 11:42:30.736  6302  6327 D SoLoader: libfbjni.so found on /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86
+03-04 11:42:30.737  6302  6327 D SoLoader: Not resolving dependencies for libfbjni.so
+03-04 11:42:30.739  6302  6327 D SoLoader: Loaded: libfbjni.so
+03-04 11:42:30.750  6302  6327 D ReactNativeFirebaseApp: received application context.
+03-04 11:42:30.787  6302  6329 E ReactNativeJNI: logMarker CREATE_REACT_CONTEXT_END
+03-04 11:42:30.787  6302  6327 E unknown:ReactNative: ReactInstanceManager.createReactContext: mJSIModulePackage null
+03-04 11:42:30.801  6302  6324 D HostConnection: HostConnection::get() New Host Connection established 0xeaad70b0, tid 6324
+03-04 11:42:30.804  6302  6329 E ReactNativeJNI: logMarker RUN_JS_BUNDLE_START
+03-04 11:42:30.805  6302  6330 E unknown:ReactNative: ReactInstanceManager.attachRootViewToInstance()
+03-04 11:42:30.809  6302  6324 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_0 
+03-04 11:42:30.817  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTGroupViewManager
+03-04 11:42:30.819  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTGroupShadowNode
+03-04 11:42:30.822  6302  6324 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-04 11:42:30.822  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTShapeViewManager
+03-04 11:42:30.822  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTShapeShadowNode
+03-04 11:42:30.824  6302  6324 D EGL_emulation: eglCreateContext: 0xea8e8bf0: maj 3 min 0 rcv 3
+03-04 11:42:30.826  6302  6324 D EGL_emulation: eglMakeCurrent: 0xea8e8bf0: ver 3 0 (tinfo 0xeac39930) (first time)
+03-04 11:42:30.843  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTTextViewManager
+03-04 11:42:30.844  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTTextShadowNode
+03-04 11:42:30.844  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.checkbox.ReactCheckBoxManager
+03-04 11:42:30.846  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+03-04 11:42:30.858  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.picker.ReactDialogPickerManager
+03-04 11:42:30.860  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+03-04 11:42:30.869   379  1373 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:30.869   379  1373 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f4015000 size 0xe11000
+03-04 11:42:30.886  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.picker.ReactDropdownPickerManager
+03-04 11:42:30.886   242   242 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+03-04 11:42:30.886  6302  6324 I Gralloc4: mapper 4.x is not supported
+03-04 11:42:30.887  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+03-04 11:42:30.892  6302  6324 D HostConnection: createUnique: call
+03-04 11:42:30.892  6302  6324 D HostConnection: HostConnection::get() New Host Connection established 0xeaad65d0, tid 6324
+03-04 11:42:30.893  6302  6324 D goldfish-address-space: allocate: Ask for block of size 0x100
+03-04 11:42:30.893  6302  6324 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fc7ba000 size 0x2000
+03-04 11:42:30.912  6302  6324 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_0 
+03-04 11:42:30.913  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+03-04 11:42:30.915  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+03-04 11:42:30.916  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+03-04 11:42:30.922   379  1373 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:30.923   379  1373 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f3204000 size 0xe11000
+03-04 11:42:30.928  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+03-04 11:42:30.930  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+03-04 11:42:30.935  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+03-04 11:42:30.936  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+03-04 11:42:30.947  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+03-04 11:42:30.949  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+03-04 11:42:30.953   379   420 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:30.953   379   420 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f23f3000 size 0xe11000
+03-04 11:42:30.964  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewManager
+03-04 11:42:30.964  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewShadowNode
+03-04 11:42:30.965  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+03-04 11:42:30.965  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+03-04 11:42:30.968  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+03-04 11:42:30.971  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+03-04 11:42:30.976  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+03-04 11:42:30.977  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+03-04 11:42:30.980  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+03-04 11:42:30.987  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+03-04 11:42:30.994  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+03-04 11:42:30.997  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+03-04 11:42:30.998  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+03-04 11:42:30.998  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+03-04 11:42:31.003  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.viewpager.ReactViewPagerManager
+03-04 11:42:31.006  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+03-04 11:42:31.007  6302  6330 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+03-04 11:42:31.010  6302  6330 D SoLoader: About to load: libyoga.so
+03-04 11:42:31.010  6302  6330 D SoLoader: libyoga.so not found on /data/user/0/com.rnfbdemo/lib-main
+03-04 11:42:31.011  6302  6330 D SoLoader: libyoga.so found on /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86
+03-04 11:42:31.011  6302  6330 D SoLoader: Not resolving dependencies for libyoga.so
+03-04 11:42:31.038  6302  6330 D SoLoader: Loaded: libyoga.so
+03-04 11:42:31.108  6302  6330 E unknown:ReactRootView: runApplication: call AppRegistry.runApplication
+03-04 11:42:31.177  6302  6330 D SoLoader: init exiting
+03-04 11:42:31.196   594   638 D ArtManagerInternalImpl: /data/misc/iorapd/com.rnfbdemo/1/com.rnfbdemo.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+03-04 11:42:31.196   594   633 I EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+03-04 11:42:31.198   594   638 I ActivityTaskManager: Displayed com.rnfbdemo/.MainActivity: +722ms
+03-04 11:42:31.202   415   581 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10153 pid=6302
+03-04 11:42:31.203   415   581 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10153 => denied (1616 us)
+03-04 11:42:31.209  6302  6302 E unknown:ReactNative: Unable to launch logbox because react was unable to create the root view
+03-04 11:42:31.263  1859  2403 I PBSessionCacheImpl: Deleted sessionId[8177583293334775] from persistence.
+03-04 11:42:31.297  1859  2168 W SearchServiceCore: Abort, client detached.
+03-04 11:42:31.372   251   251 E vold    : Failed to set default ACL on /data/media/0/Android/obb/: Operation not supported on transport endpoint
+03-04 11:42:31.378  6302  6329 W ContextImpl: Failed to ensure /storage/emulated/0/Android/data/com.rnfbdemo/files: android.os.ServiceSpecificException:  (code -1)
+03-04 11:42:31.378  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.379  1620  2210 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.380  1620  1783 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.381  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.383  1620  2210 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.383  1620  1783 V FuseDaemon: pf_getattr : node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.384  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.385  1620  2210 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.385  1620  1783 V FuseDaemon: pf_mkdir : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.396   594  1662 D CompatibilityChangeReporter: Compat change id reported: 149924527; UID 10153; state: ENABLED
+03-04 11:42:31.397   594  1662 D CompatibilityChangeReporter: Compat change id reported: 132649864; UID 10153; state: DISABLED
+03-04 11:42:31.410  1620  1783 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937359344 real_path: /storage/0EF1-1507/Android/data/com.rnfbdemo] 
+03-04 11:42:31.410  1620  1783 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608 real_path: /storage/0EF1-1507/Android/data] 
+03-04 11:42:31.410  1620  6337 E FuseDaemon: Failed to invalidate dentry com.rnfbdemo
+03-04 11:42:31.411  1620  2210 V FuseDaemon: do_forget : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937359344/3937361072 real_path: /storage/0EF1-1507/Android/data/com.rnfbdemo/files] 
+03-04 11:42:31.411  1620  2210 D FuseDaemon: Node: 3937361072 deleted.
+03-04 11:42:31.411  1620  1783 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937359344 real_path: /storage/0EF1-1507/Android/data/com.rnfbdemo] 
+03-04 11:42:31.412  1620  1784 V FuseDaemon: do_lookup : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937359344 real_path: /storage/0EF1-1507/Android/data/com.rnfbdemo] 
+03-04 11:42:31.413  1620  2210 V FuseDaemon: pf_mkdir : parent_node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937359344 real_path: /storage/0EF1-1507/Android/data/com.rnfbdemo] 
+03-04 11:42:31.414  1620  6338 E FuseDaemon: Failed to invalidate dentry com.rnfbdemo
+03-04 11:42:31.414  1620  6338 E FuseDaemon: Failed to invalidate dentry com.rnfbdemo
+03-04 11:42:31.419  1620  2210 D FuseDaemon: Node: 3937361072 created.
+03-04 11:42:31.419  1620  2210 V FuseDaemon: make_node_entry : node = [node_path: /storage/0EF1-1507/3937234832/3937218608/3937359344/3937361072 real_path: /storage/0EF1-1507/Android/data/com.rnfbdemo/files] 
+03-04 11:42:31.455  6302  6329 E ReactNativeJS: Error: Exception in HostObject::get(propName:RNFBUtilsModule): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.io.File.getAbsolutePath()' on a null object reference
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: CatalystInstanceImpl caught native exception
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: com.facebook.react.common.JavascriptException: Error: Exception in HostObject::get(propName:RNFBUtilsModule): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.io.File.getAbsolutePath()' on a null object reference, stack:
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: <unknown>@435:648
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: assign@-1
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: v@416:1922
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: N@416:1993
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: N@-1
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: createModuleNamespace@416:464
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: <unknown>@433:1684
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: <unknown>@415:220
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: <unknown>@406:148
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: <unknown>@6:57
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: d@2:875
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: global code@438:3
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.java:83)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at java.lang.reflect.Method.invoke(Native Method)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:372)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:151)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.NativeRunnable.run(Native Method)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at android.os.Looper.loop(Looper.java:223)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-04 11:42:31.470  6302  6330 E unknown:ReactNative: 	at java.lang.Thread.run(Thread.java:923)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: Caught exception
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: com.facebook.react.common.JavascriptException: Error: Exception in HostObject::get(propName:RNFBUtilsModule): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.io.File.getAbsolutePath()' on a null object reference, stack:
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: <unknown>@435:648
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: assign@-1
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: v@416:1922
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: N@416:1993
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: N@-1
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: createModuleNamespace@416:464
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: <unknown>@433:1684
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: <unknown>@415:220
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: <unknown>@406:148
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: <unknown>@6:57
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: v@2:1473
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: d@2:875
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: global code@438:3
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.java:83)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:372)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:151)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at com.facebook.react.bridge.queue.NativeRunnable.run(Native Method)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at android.os.Looper.loop(Looper.java:223)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-04 11:42:31.470  6302  6330 E unknown:DisabledDevSupportManager: 	at java.lang.Thread.run(Thread.java:923)
+--------- beginning of crash
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: FATAL EXCEPTION: mqt_native_modules
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: Process: com.rnfbdemo, PID: 6302
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: com.facebook.react.common.JavascriptException: Error: Exception in HostObject::get(propName:RNFBUtilsModule): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.io.File.getAbsolutePath()' on a null object reference, stack:
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: <unknown>@435:648
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: assign@-1
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: v@416:1922
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: N@416:1993
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: N@-1
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: createModuleNamespace@416:464
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: <unknown>@433:1684
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: v@2:1473
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: <unknown>@415:220
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: v@2:1473
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: <unknown>@406:148
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: v@2:1473
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: <unknown>@6:57
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: v@2:1473
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: d@2:875
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: global code@438:3
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.java:83)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:372)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:151)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at com.facebook.react.bridge.queue.NativeRunnable.run(Native Method)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:223)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-04 11:42:31.474  6302  6330 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:923)
+03-04 11:42:31.478   594  6339 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+03-04 11:42:31.478   594  1662 W ActivityTaskManager:   Force finishing activity com.rnfbdemo/.MainActivity
+03-04 11:42:31.480  6302  6329 D SoLoader: About to load: libreactnativeblob.so
+03-04 11:42:31.480  6302  6329 D SoLoader: libreactnativeblob.so not found on /data/user/0/com.rnfbdemo/lib-main
+03-04 11:42:31.481  6302  6329 D SoLoader: libreactnativeblob.so found on /data/app/~~bAFbGq_nZpd2bUBIJyHMmA==/com.rnfbdemo-CxOTf9D44VoZSBA1-htCEg==/lib/x86
+03-04 11:42:31.481  6302  6329 D SoLoader: Not resolving dependencies for libreactnativeblob.so
+03-04 11:42:31.482  6302  6329 D SoLoader: Loaded: libreactnativeblob.so
+03-04 11:42:31.482   379   420 D goldfish-address-space: allocate: Ask for block of size 0x900000
+03-04 11:42:31.482   379   420 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9320000 size 0x901000
+03-04 11:42:31.486  6302  6329 E ReactNativeJNI: logMarker RUN_JS_BUNDLE_END
+03-04 11:42:31.488  6302  6329 E ReactNativeJS: Invariant Violation: Module AppRegistry is not a registered callable module (calling runApplication)
+03-04 11:42:31.498   594   639 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+03-04 11:42:31.498   594   639 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+03-04 11:42:31.503   594  4010 D HostConnection: HostConnection::get() New Host Connection established 0x5da92e50, tid 4010
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.505   594   912 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+03-04 11:42:31.522  6302  6330 I Process : Sending signal. PID: 6302 SIG: 9
+03-04 11:42:31.537   594  4010 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_0 
+03-04 11:42:31.538   594  4010 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-04 11:42:31.540   594  4010 D EGL_emulation: eglCreateContext: 0xea8e4890: maj 3 min 0 rcv 3
+03-04 11:42:31.541   594  4010 D EGL_emulation: eglMakeCurrent: 0xea8e4890: ver 3 0 (tinfo 0x63d1ecd0) (first time)
+03-04 11:42:31.571   379   420 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:31.571   379   420 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f5c37000 size 0xe11000
+03-04 11:42:31.614   379   420 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:31.615   379   420 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f4e26000 size 0xe11000
+03-04 11:42:31.630   379  1373 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:31.631   379  1373 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f8079000 size 0xe11000
+03-04 11:42:31.645   379  1374 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:31.645   379  1374 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7268000 size 0xe11000
+03-04 11:42:31.673   594  1838 I ActivityManager: Process com.rnfbdemo (pid 6302) has died: prcp CRE 
+03-04 11:42:31.676   379  1374 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:31.677   379  1374 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fb9ab000 size 0xe11000
+03-04 11:42:31.645     0     0 I binder  : undelivered transaction 485608, process died.
+03-04 11:42:31.688   359   359 I Zygote  : Process 6302 exited due to signal 9 (Killed)
+03-04 11:42:31.693   594  2047 I WindowManager: WIN DEATH: Window{73f187b u0 com.rnfbdemo/com.rnfbdemo.MainActivity}
+03-04 11:42:31.693   379  1374 D goldfish-address-space: allocate: Ask for block of size 0xe10000
+03-04 11:42:31.694   594  2047 W InputDispatcher: Attempted to unregister already unregistered input channel '73f187b com.rnfbdemo/com.rnfbdemo.MainActivity (server)'
+03-04 11:42:31.694   379  1374 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fab9a000 size 0xe11000
+03-04 11:42:31.719   594   641 I libprocessgroup: Successfully killed process cgroup uid 10153 pid 6302 in 44ms
+03-04 11:42:31.742   594   633 W ActivityManager: setHasOverlayUi called on unknown pid: 6302
+03-04 11:42:31.762   594   634 W WindowManager: Failed to deliver inset state change to w=Window{73f187b u0 com.rnfbdemo/com.rnfbdemo.MainActivity}
+03-04 11:42:31.762   594   634 W WindowManager: android.os.DeadObjectException
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:540)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.view.IWindow$Stub$Proxy.insetsControlChanged(IWindow.java:765)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.WindowState.notifyInsetsControlChanged(WindowState.java:3582)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.InsetsStateController.lambda$notifyPendingInsetsControlChanged$4$InsetsStateController(InsetsStateController.java:428)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.-$$Lambda$InsetsStateController$-1iOXDf-1s3wDHcMIHBKNk6MS3I.run(Unknown Source:2)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.WindowAnimator.executeAfterPrepareSurfacesRunnables(WindowAnimator.java:323)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.WindowAnimator.animate(WindowAnimator.java:204)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.WindowAnimator.lambda$new$1$WindowAnimator(WindowAnimator.java:100)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.wm.-$$Lambda$WindowAnimator$ddXU8gK8rmDqri0OZVMNa3Y4GHk.doFrame(Unknown Source:2)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:970)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.view.Choreographer.doCallbacks(Choreographer.java:796)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.view.Choreographer.doFrame(Choreographer.java:727)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:957)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.os.Looper.loop(Looper.java:223)
+03-04 11:42:31.762   594   634 W WindowManager: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+03-04 11:42:31.762   594   634 W WindowManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+03-04 11:42:31.786  1859  2212 W ThreadPoolDumper: Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+03-04 11:42:31.800   820   844 I ndroid.systemu: NativeAlloc concurrent copying GC freed 62968(2805KB) AllocSpace objects, 2(40KB) LOS objects, 49% free, 6576KB/12MB, paused 1.330ms total 299.414ms
+03-04 11:42:31.920  1859  1859 I BgTaskExecutorImpl: Starting EXCLUSIVE background task TNG_MINUS_ONE_SYNC.
+03-04 11:42:31.924  1859  2168 I TngMinusOneSync: Syncing TNG:-1
+03-04 11:42:33.124  1859  2178 W OpaSSRequestSender: Failed to get ZeroStateResponse from AssistantClientSyncWorker with error java.util.concurrent.TimeoutException
+03-04 11:42:33.451   268   273 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup34: Permission denied
+03-04 11:42:33.455   268   273 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+03-04 11:42:33.444   268   268 W Binder:268_2: type=1400 audit(0.0:52): avc: denied { read } for name="wakeup34" dev="sysfs" ino=17466 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+03-04 11:42:33.452   268   268 W Binder:268_2: type=1400 audit(0.0:53): avc: denied { read } for name="wakeup35" dev="sysfs" ino=17526 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0

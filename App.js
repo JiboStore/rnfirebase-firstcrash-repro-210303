@@ -24,6 +24,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import firebase from '@react-native-firebase/app';
+
+firebase.initializeApp({appId: 'com.rnfbdemo'});
+
 const App: () => React$Node = () => {
   return (
     <>

@@ -26,7 +26,13 @@ import {
 
 import firebase from '@react-native-firebase/app';
 
-firebase.initializeApp({appId: 'com.testrefresh'});
+firebase.initializeApp({name: 'com.testrefresh'})
+  .then((firebaseApp) => {
+    console.log(`successfully created new firebase app named ${firebaseApp.name}`);
+  })
+  .catch((e) => {
+    console.error('unable to create firebase app', e);
+  });
 
 const App: () => React$Node = () => {
   return (
